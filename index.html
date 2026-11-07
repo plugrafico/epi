@@ -226,22 +226,16 @@
 
         if (m > l && m > x) {
             title = "Perfil Mercantilista";
-            desc = "Sua visão prioriza a segurança nacional, a proteção estatal e o bem-estar coletivo da nação. Para você, o Estado deve intervir na economia para evitar vulnerabilidades externas e garantir o poder soberano.";
         } else if (l > m && l > x) {
             title = "Perfil Liberal";
-            desc = "Seus valores colocam a liberdade individual, a autonomia e o livre mercado no centro de tudo. Você acredita que a cooperação, a inovação e o comércio livre promovem o progresso e o bem-estar global.";
         } else if (x > m && x > l) {
             title = "Perfil Marxista";
-            desc = "Sua perspectiva está centrada na crítica às desigualdades sociais e na transformação das estruturas de poder. Você enxerga a economia global como uma arena marcada pela exploração de classe e busca a equidade real.";
         } else if (m === x && m > l) {
             title = "Perfil Misto: Mercantilista-Marxista";
-            desc = "Você combina o foco mercantilista na soberania do Estado com a preocupação marxista com a justiça social. Para você, o Estado deve ser forte para proteger a sociedade frente ao capitalismo internacional e reduzir assimetrias.";
         } else if (l === x && l > m) {
             title = "Perfil Misto: Liberal-Marxista";
-            desc = "Você valoriza a liberdade individual e a disposição ao risco do liberalismo, mas não ignora a crítica marxista à desigualdade. Seu perfil apoia a autonomia do indivíduo acompanhada de forte responsabilidade social.";
         } else {
-            title = "Perfil Misto: Pragmático / Pluralista";
-            desc = "Seus valores são equilibrados entre as três correntes. Você reconhece que um mundo funcional exige a segurança estatal do Mercantilismo, o dinamismo econômico do Liberalismo e a equidade social do Marxismo.";
+            title = "Perfil Misto: Todas as anteriores";
         }
 
         document.getElementById("profile-title").innerText = title;
